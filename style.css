@@ -71,7 +71,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   flex-direction: column;
   flex: 2;
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: var(--primary-dark);
   min-width: 330px;
 }
@@ -115,7 +115,7 @@ input::-webkit-inner-spin-button {
 }
 
 .err {
-  color: red;
+  color: whitesmoke;
   font-size: 0.9rem;
   font-weight: bold;
 }
@@ -129,6 +129,7 @@ input::-webkit-inner-spin-button {
   background-color: var(--primary-light);
   min-width: 330px;
   padding: 0.2rem 0.5rem;
+  width: 100%;
 }
 
 .cake-img {

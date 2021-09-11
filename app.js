@@ -23,12 +23,14 @@ const clickHandler = () => {
     const diff = diffCalculator(oldPrice, newPrice, quantity);
     if (diff > 0) {
       const percentage = percCalculator(oldPrice * quantity, diff);
-      resMsg.innerText = `You have gained ${percentage}% Profit of ${rupee}${diff}`;
+      resMsg.innerText = `You have gained ${percentage.toFixed(
+        2
+      )}% Profit of ${rupee}${diff}`;
     } else {
       const percentage = percCalculator(oldPrice * quantity, -1 * diff);
-      resMsg.innerText = `You have got ${percentage}% Loss of ${rupee}${
-        -1 * diff
-      }`;
+      resMsg.innerText = `You have got ${percentage.toFixed(
+        2
+      )}% Loss of ${rupee}${-1 * diff}`;
     }
   } else {
     errMsg.innerText = "!! Please Enter valid values !!";
